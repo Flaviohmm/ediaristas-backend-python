@@ -20,7 +20,7 @@
                     <td>{{ diarista.cep }}</td>
                     <td>
                         <a href="{% url 'editar_diarista' diarista.id %}" type="button" class="btn btn-warning btn-sm">Editar</a> 
-                        <a href="#" type="button" class="btn btn-danger btn-sm">Remover</a>
+                        <a href="{% url 'remover_diarista' diarista.id %}" type="button" class="btn btn-danger btn-sm">Remover</a>
                     </td>
                 </tr>        
             {% endfor %}
