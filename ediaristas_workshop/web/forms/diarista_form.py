@@ -8,7 +8,7 @@ class DiaristaForm(forms.ModelForm):
 
     class Meta:
         model = Diarista
-        fields = '__all__'
+        exclude = ('codigo_ibge', )
 
     def clean_cpf(self):
         cpf = self.cleaned_data['cpf']

@@ -4,9 +4,11 @@
 
 {% block conteudo %}
     <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}    
-        {{form_diarista | crispy}}
+        <label style="margin: 10px auto;"></label>  
 
-        <button type="submit" class="btn btn-primary" style="margin-top:10px;">Cadastrar</button>
+        {% csrf_token %}  
+        {{form_diarista | crispy}}
+        
+        <button type="submit" class="btn btn-primary" style="margin-top: 15px; margin-bottom: 20px">Cadastrar</button>
     </form>
 {% endblock conteudo %}
